@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+  <title>Dogs</title>
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"></link>
+  <link rel="stylesheet" type="text/css" media="screen" href="api.css" />
+</head>
+
+<body>
+  <section class="container">
+    <header>
+      <h1>Find Your New Best Friend</h1>
+    </header>
+    <form id="search-form">
+      <label for="search_dogs">Search For An Adorble Pup:</label>
+      <input type="text" name="dog-types" id="dog-types">
+      <button type="submit">Submit Search</button>
+    </form>
+    <article>
+      <header>
+        <h2>Cat Information</h2>
+      </header>
+      <section>
+        <header>
+          <h3 id="display-dog-name"><!--info from api call--></h3>
+        </header>
+        <h4 id="dog-description-header"><!--info from api call--></h4>
+        <p id="dog-description"></p>
+      </section>
+    </article>
+  </section>
+</body>
+<script src="api.js"></script>
+
+</html>

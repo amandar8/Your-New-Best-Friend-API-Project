@@ -4,10 +4,8 @@
 <head>
   <meta charset="utf-8" />
   <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
-  <title>Dogs</title>
-  <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"></link>
-  <link rel="stylesheet" type="text/css" media="screen" href="api.css" />
+  <title>Pups-N-Stuff</title>
+  <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
 </head>
 
 <body>
@@ -15,25 +13,38 @@
     <header>
       <h1>Find Your New Best Friend</h1>
     </header>
+
     <form id="search-form">
-      <label for="search_dogs">Search For An Adorble Pup:</label>
-      <input type="text" name="dog-types" id="dog-types">
-      <button type="submit">Submit Search</button>
+      <section id="dog-section" class="dog-section">
+        <label for="search-bar">Search For An Adorble Pup:</label>
+        <input type="text" name="search-bar" id="search-bar">
+        <button id="search-button" type="submit">Search</button>
+      </section>
+
+      <section id="random-section" class="random-section">
+        <label for="random-button">Random Pups! Enjoy!</label>
+        <!-- <input type="text" name="random-bar" id="random-bar"> -->
+        <button id="random-button" type="submit" onclick="myFunction()">Search</button>
+      </section>
     </form>
-    <article>
-      <header>
-        <h2>Cat Information</h2>
-      </header>
-      <section>
+
+    <article id="results-article">
+      <section id="breed-results">
         <header>
-          <h3 id="display-dog-name"><!--info from api call--></h3>
+          <h2 id="display-dog-breed"></h2>
+          <!-- <img id="dogPictures" src="" alt=""> -->
         </header>
-        <h4 id="dog-description-header"><!--info from api call--></h4>
-        <p id="dog-description"></p>
+      </section>
+
+      <section id="random-results">
+        <header>
+          <h2 id="random-dogs"></h2>
+          <img id="dogPictures" src="" alt="">
+        </header>
       </section>
     </article>
   </section>
 </body>
-<script src="api.js"></script>
+<script src="dogapi.js"></script>
 
 </html>
